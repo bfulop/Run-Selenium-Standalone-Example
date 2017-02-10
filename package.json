@@ -1,0 +1,15 @@
+{
+  "name": "selenium-standalone",
+  "version": "1.0.0",
+  "description": "selenium standalone runner",
+  "scripts": {
+    "main": "start.js",
+    "start": "start"
+  },
+  "repository": {},
+  "author": "Balint Fulop",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-standalone": "^6.0.1"
+  }
+}
