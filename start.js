@@ -5,7 +5,11 @@ function start (done) {
   selenium.install(config, function (err) {
     if (err) return done(err)
 
-    selenium.start(function (err, child) {
+    selenium.start({
+      spawnCb (res) {
+        console.log('spawnCb', res)
+      }
+    }, function (err, child) {
       if (err) return done(err)
       selenium.child = child
       done('huzzah')
